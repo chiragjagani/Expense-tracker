@@ -15,10 +15,9 @@ As a PG resident, managing expenses is crucial to avoid running out of money and
 ### HTML and CSS for the user interface
 
 ## How to Use
-### 1. Click the "Add Expense" button to enter a new expense
-### 2. Fill in the date, amount, and description of the expense
-### 3. Click "Save" to add the expense to the list
-### 4. Click the "Download Excel" button to generate an Excel file of your expenses
+### 1. Fill in the amount, and description of the expense
+### 2. Click "Add Expense" to add the expense to the list
+### 3. Click the "Download Data" button to generate an Excel file of your expenses
 
 ## Why I Built This
 As a PG resident, I know how important it is to manage expenses effectively. This web application helps me stay on top of my finances and avoid overspending. I hope it can do the same for you!
