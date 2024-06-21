@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Expense Tracker</title>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    />
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+      }
+      .list-group-item {
+        padding: 10px;
+      }
+      .btn-sm {
+        margin: 0 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Expense Tracker</h1>
+      <form id="expense-form">
+        <div class="form-group">
+          <label for="amount">Amount (₹)</label>
+          <input type="number" id="amount" class="form-control" />
+        </div>
+        <div class="form-group">
+          <label for="description">Description</label>
+          <input type="text" id="description" class="form-control" />
+        </div>
+        <button type="submit" class="btn btn-primary">Add Expense</button>
+      </form>
+      <hr />
+      <h2>Latest Expenses</h2>
+      <ul id="latest-expenses" class="list-group"></ul>
+      <hr />
+      <h2>Weekly Expenses</h2>
+      <ul id="weekly-expenses" class="list-group"></ul>
+      <hr />
+      <h2>Monthly Expenses</h2>
+      <ul id="monthly-expenses" class="list-group"></ul>
+      <hr />
+      <button id="download-data" class="btn btn-success">Download Data</button>
+      <hr />
+      <div>
+        <h2>Monthly Expenses</h2>
+        <p>Total: <span id="total-month"></span></p>
+        <p>Average: <span id="average-month"></span></p>
+      </div>
+
+      <div>
+        <h2>Weekly Expenses</h2>
+        <p>Total: <span id="total-week"></span></p>
+        <p>Average: <span id="average-week"></span></p>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/xlsx@0.18.5/dist/xlsx.full.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
